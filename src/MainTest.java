@@ -84,6 +84,8 @@ class MainTest {
 
         int[] actual = Main.zip(array1, array2);
         int[] actualTwo = Main.zip(array3, array4);
+        System.out.println(actual);
+        System.out.println(actualTwo);
 
         assertEquals(expected.length, actual.length);
         assertEquals(expectedTwo.length, actualTwo.length);
