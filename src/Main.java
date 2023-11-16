@@ -31,11 +31,14 @@ public class Main {
         int arraycount = 0;
         int arrayc = 0;
         for (int i=0; i<array1.length*2; i++) {
-            if (arraycount == arrayc && arraycount < array1.length) {
+            if (arraycount <= arrayc && arraycount < array1.length) {
                 stupid[i] = array1[arraycount];
                 arraycount++;
             }
-            else if (arrayc < array2.length)stupid[i] = array2[arrayc]; arrayc++;
+            else if (arrayc < array2.length) {
+                stupid[i] = array2[arrayc];
+                arrayc++;
+            }
         }
         return stupid;
     }
